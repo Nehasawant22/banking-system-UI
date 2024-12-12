@@ -1,22 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import SaveEmployeeDetails from './component/SaveEmployeeDetails';
-import DeleteCustomer from './component/DeleteCustomer';
-import EmployeeAccountDetails from './component/EmployeeAccountDetails';
-import CustomerMenu from './component/CustomerMenu';
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  
-  // <React.StrictMode>
+ 
   <App/>
-  // <EmployeeAccountDetails/>
-  // <SaveEmployeeDetails/>
-  // <DeleteCustomer/>
-  // </React.StrictMode>
+ 
 );
 
 // If you want to start measuring performance in your app, pass a function
