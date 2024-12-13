@@ -1,6 +1,4 @@
 import React from 'react';
-import Dropdown from 'react-bootstrap/Dropdown';
-import DropdownButton from 'react-bootstrap/DropdownButton';
 import { Link } from "react-router-dom";
 import {
     Nav,
@@ -29,10 +27,13 @@ const CustomerMenu = () => {
                         Delete Customer
                     </NavLink>
                     <NavLink>
-                        <NavDropDownBtn title="Account Details" id="basic-nav-dropdown">
-                            <NavDropDownBtn.Item as={Link} to="/accountdetails">Action</NavDropDownBtn.Item>
-                            <NavDropDownBtn.Item as={Link} to="/deletcustomer">
-                                Another action
+                        <NavDropDownBtn title="Services" id="basic-nav-dropdown">
+                            <NavDropDownBtn.Item as={Link} to="/accountdetails">Know Current Balance</NavDropDownBtn.Item>
+                            <NavDropDownBtn.Item as={Link} to="/creditamount">
+                                Credit Amount
+                            </NavDropDownBtn.Item>
+                            <NavDropDownBtn.Item as={Link} to="/debitamount">
+                                Debit Amount
                             </NavDropDownBtn.Item>
                         </NavDropDownBtn>
                     </NavLink>

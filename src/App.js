@@ -7,6 +7,8 @@ import DeleteCustomer from './component/DeleteCustomer';
 import SaveEmployeeDetails from './component/SaveEmployeeDetails';
 import AccountDetails from './component/AccountDetails';
 import CustomerMenu from './component/CustomerMenu';
+import CreditAmount from './component/CreditAmount';
+import DebitAmount from './component/DebitAmount';
 
 const App = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -22,7 +24,9 @@ const App = () => {
         <Route path='/employeedetails' element={<SaveEmployeeDetails />} />
         <Route path='/employeeaccountdetails' element={<EmployeeAccountDetails />} />
         <Route path='/deletcustomer' element={<DeleteCustomer />} />
-        <Route path='accountdetails' element={<AccountDetails />} />
+        <Route path='/accountdetails' element={<AccountDetails />} />
+        <Route path='/creditamount' element={<CreditAmount />} />
+        <Route path='/debitamount' element={<DebitAmount />} />
       </Routes>
     </Router>
   );
