@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
+import { StyledComponet } from './navElements';
 
 function DeleteCustomer() {
   const [posts, setCustomer] = useState([])
@@ -17,6 +18,7 @@ function DeleteCustomer() {
   }
   return (
     <div>
+      <StyledComponet>
       <form onSubmit={deleteHandler}>
         <div class="form-group row">
           <label for="staticEmail" class="col-sm-2 col-form-label"> Customer Id</label>
@@ -33,6 +35,7 @@ function DeleteCustomer() {
       
         <button className='btn btn-primary'>Delete</button>
       </form>
+      </StyledComponet>
     </div>
   )
 };

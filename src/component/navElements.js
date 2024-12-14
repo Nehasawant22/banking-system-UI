@@ -2,10 +2,10 @@ import { NavDropdown } from "react-bootstrap";
 import { FaBars } from "react-icons/fa";
 import { NavLink as Link } from "react-router-dom";
 import styled from "styled-components";
-
+export const StyledComponet=styled.div`margin-top :20px`;
 export const Nav = styled.nav`
     background: #63d471;
-    height: 85px;
+    height: 60px;
     display: flex;
     justify-content: space-between;
     padding: 0.2rem calc((100vw - 1000px) / 2);

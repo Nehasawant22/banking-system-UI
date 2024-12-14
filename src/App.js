@@ -9,6 +9,7 @@ import AccountDetails from './component/AccountDetails';
 import CustomerMenu from './component/CustomerMenu';
 import CreditAmount from './component/CreditAmount';
 import DebitAmount from './component/DebitAmount';
+import Footer from './component/Footer';
 
 const App = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -28,6 +29,7 @@ const App = () => {
         <Route path='/creditamount' element={<CreditAmount />} />
         <Route path='/debitamount' element={<DebitAmount />} />
       </Routes>
+      <Footer/>
     </Router>
   );
 }

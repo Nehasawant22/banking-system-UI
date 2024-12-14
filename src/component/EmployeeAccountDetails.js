@@ -1,6 +1,7 @@
 import React , { useEffect, useState } from 'react';
 import { getCustomers } from '../services/EmployeeService';
 import axios from 'axios';
+import { StyledComponet } from './navElements';
 function EmployeeAccountDetails(){
     const [customers, setCustomer] = useState([])
     
@@ -18,6 +19,7 @@ function EmployeeAccountDetails(){
 
     return(
        <div>
+        <StyledComponet>
          <form onSubmit={handleSubmit}>
           <input type="text" id="customerId" readonly class="form-control-plaintext"  placeholder="Enter your Account Number to Display Account Details"/>
           <button type="submit" class="btn btn-primary btn-sm" >click here</button>
@@ -42,6 +44,7 @@ function EmployeeAccountDetails(){
       </tbody>
      </table>
      </form>
+     </StyledComponet>
         </div>
     )
 }

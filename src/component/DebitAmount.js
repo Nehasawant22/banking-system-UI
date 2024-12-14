@@ -1,5 +1,6 @@
 import axios from 'axios';
 import React , { useEffect, useState } from 'react';
+import { StyledComponet } from './navElements';
 
 const DebitAmount = () => {
    
@@ -21,6 +22,7 @@ const DebitAmount = () => {
     }
   return (
     <div>
+      <StyledComponet>
       <form onSubmit={cureentBalanceHandler}>
         
         <div class="form-group row">
@@ -41,6 +43,7 @@ const DebitAmount = () => {
         {balance >= 0 && flag && <p>Your updated Balane is {balance}/-</p>}
        
       </form>
+      </StyledComponet>
     </div>
   )
 }

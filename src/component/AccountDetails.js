@@ -1,5 +1,6 @@
 import axios from 'axios';
 import React , { useEffect, useState } from 'react';
+import { StyledComponet } from './navElements';
 
 const AccountDetails = () => {
   const [account, setAccount] = useState([])
@@ -20,6 +21,7 @@ const AccountDetails = () => {
     }
   return (
     <div>
+      <StyledComponet>
       <form onSubmit={cureentBalanceHandler}>
         <div class="form-group row">
           <label for="staticEmail" class="col-sm-2 col-form-label"> Customer Id</label>
@@ -37,6 +39,7 @@ const AccountDetails = () => {
         <button type="submit" class="btn btn-primary btn-sm" >Click Here</button>
         {flag && <p>Your Current Balane is {account.currentBalance}/-</p>}
       </form>
+      </StyledComponet>
     </div>
   )
 }
